@@ -10,5 +10,8 @@ public class Promociones_act extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_promociones_act);
+        getSupportActionBar().hide();
+
+
     }
 }

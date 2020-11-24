@@ -6,4 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".Firebase_act">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A3E6D7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Promociones_act">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="375dp"
+            android:layout_height="597dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="53dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="162dp"
+                    android:layout_height="153dp"
+                    android:layout_marginStart="106dp"
+                    android:layout_marginLeft="106dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/firebase" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="352dp"
+                    android:layout_height="224dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="17dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Ingrese Nombre"
+                        android:inputType="textPersonName"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Ingrese Destino"
+                        android:inputType="textPersonName"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Ingrese Promoción"
+                        android:inputType="textPersonName"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="258dp"
+                    android:layout_height="142dp"
+                    android:layout_marginStart="58dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="18dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="Guardar Cliente"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/holo_blue_dark"
+                        android:text="LISTADO CLIENTES"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

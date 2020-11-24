@@ -10,5 +10,8 @@ public class ListadoClientes_act extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listado_clientes_act);
+        getSupportActionBar().hide();
+
+
     }
 }

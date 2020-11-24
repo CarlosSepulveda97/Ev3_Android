@@ -10,5 +10,8 @@ public class Firebase_act extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase_act);
+        getSupportActionBar().hide();
+
+
     }
 }
