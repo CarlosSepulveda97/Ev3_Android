@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "643561686898",
+    "firebase_url": "https://ev3android.firebaseio.com",
+    "project_id": "ev3android",
+    "storage_bucket": "ev3android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643561686898:android:73a99692b83524d9a37feb",
+        "android_client_info": {
+          "package_name": "com.example.ev3_carlos_sepulveda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643561686898-12km2mue5erc338o6h3ubda0b6tjgnee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4j7mftZiK_6ASUXszF0R2t0lhnIdV0kU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643561686898-12km2mue5erc338o6h3ubda0b6tjgnee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
