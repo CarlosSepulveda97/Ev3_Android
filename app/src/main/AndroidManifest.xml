@@ -13,7 +13,14 @@
         <activity android:name=".ListadoClientes_act" />
         <activity android:name=".Firebase_act" />
         <activity android:name=".Menu_act" />
-        <activity android:name=".Login_act" />
+        <activity android:name=".Login_act" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

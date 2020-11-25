@@ -23,11 +23,11 @@
 
             <VideoView
                 android:id="@+id/videoView2"
-                android:layout_width="387dp"
-                android:layout_height="179dp"
-                android:layout_marginStart="11dp"
-                android:layout_marginLeft="11dp"
-                android:layout_marginTop="10dp"
+                android:layout_width="335dp"
+                android:layout_height="178dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -54,6 +54,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="40dp"
                 android:background="@color/colorAccent"
+                android:onClick="gestionar"
                 android:text="Gestión pizzas"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
@@ -69,6 +70,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@android:color/holo_blue_dark"
+                android:onClick="promociones"
                 android:text="PROMOCIONES"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
