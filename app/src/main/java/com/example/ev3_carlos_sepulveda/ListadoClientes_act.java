@@ -83,6 +83,9 @@ public class ListadoClientes_act extends AppCompatActivity {
         databaseReference.child("Clientes").child(cliente.getId()).removeValue();
         Toast.makeText(this, "Se ha eliminado a" + selectedClient.getNombre(), Toast.LENGTH_SHORT).show();
 
+        finish();
+        startActivity(getIntent());
+
     }
 
 
