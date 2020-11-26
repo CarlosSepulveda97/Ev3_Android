@@ -2,14 +2,32 @@ package Model;
 
 public class Cliente {
 
-   private String nombre;
-   private Pedido pedido;
-   private String id;
+    private String id;
+    private String nombre;
+    private String promo;
+    private String destino;
 
-    public Cliente(String id, String nombre, Pedido pedido) {
+    public Cliente(String id, String nombre, String promo, String destino) {
         this.id = id;
         this.nombre = nombre;
-        this.pedido = pedido;
+        this.promo = promo;
+        this.destino = destino;
+    }
+
+    public Cliente() {
+    }
+
+    @Override
+    public String toString(){
+        return this.nombre;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -20,19 +38,19 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public Pedido getPedido() {
-        return pedido;
+    public String getPromo() {
+        return promo;
     }
 
-    public void setPedido(Pedido pedido) {
-        this.pedido = pedido;
+    public void setPromo(String promo) {
+        this.promo = promo;
     }
 
-    public String getId() {
-        return id;
+    public String getDestino() {
+        return destino;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setDestino(String destino) {
+        this.destino = destino;
     }
 }

@@ -52,30 +52,27 @@ public class Firebase_act extends AppCompatActivity {
                         && !ed2.getText().toString().equalsIgnoreCase("")
                         && !ed1.getText().toString().equalsIgnoreCase("")){
 
-                    Promociones promocion = new Promociones("Pizzas promo", 5990);
-                    Pedido pedido = new Pedido(promocion, ed2.getText().toString());
-                    cliente = new Cliente(UUID.randomUUID().toString(),ed1.getText().toString(), pedido);
-                    databaseReference.child("Clientes").child(cliente.getId()).child(cliente.getNombre()).child(pedido.getDestino()).setValue(promocion);
+                    cliente = new Cliente(UUID.randomUUID().toString(),ed1.getText().toString(),ed3.getText().toString(),ed2.getText().toString());
+
+                    databaseReference.child("Clientes").child(cliente.getId()).setValue(cliente);
                     Toast.makeText(Firebase_act.this, "Guardado", Toast.LENGTH_SHORT).show();
 
                 }else if (ed3.getText().toString().equalsIgnoreCase("master pizza")
                         && !ed2.getText().toString().equalsIgnoreCase("")
                         && !ed1.getText().toString().equalsIgnoreCase("")){
 
-                    Promociones promocion = new Promociones("Master pizza", 12990);
-                    Pedido pedido = new Pedido(promocion, ed2.getText().toString());
-                    cliente = new Cliente(UUID.randomUUID().toString(),ed1.getText().toString(), pedido);
-                    databaseReference.child("Clientes").child(cliente.getId()).child(cliente.getNombre()).child(pedido.getDestino()).setValue(promocion);
+                    cliente = new Cliente(UUID.randomUUID().toString(),ed1.getText().toString(),ed3.getText().toString(),ed2.getText().toString());
+
+                    databaseReference.child("Clientes").child(cliente.getId()).setValue(cliente);
                     Toast.makeText(Firebase_act.this, "Guardado", Toast.LENGTH_SHORT).show();
 
                 }else if (ed3.getText().toString().equalsIgnoreCase("pizza max")
                         && !ed2.getText().toString().equalsIgnoreCase("")
                         && !ed1.getText().toString().equalsIgnoreCase("")){
 
-                    Promociones promocion = new Promociones("Pizza max", 18500);
-                    Pedido pedido = new Pedido(promocion, ed2.getText().toString());
-                    cliente = new Cliente(UUID.randomUUID().toString(),ed1.getText().toString(), pedido);
-                    databaseReference.child("Clientes").child(cliente.getId()).child(cliente.getNombre()).child(pedido.getDestino()).setValue(promocion);
+                    cliente = new Cliente(UUID.randomUUID().toString(),ed1.getText().toString(),ed3.getText().toString(),ed2.getText().toString());
+
+                    databaseReference.child("Clientes").child(cliente.getId()).setValue(cliente);
                     Toast.makeText(Firebase_act.this, "Guardado", Toast.LENGTH_SHORT).show();
 
                 }else{
