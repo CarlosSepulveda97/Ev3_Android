@@ -57,6 +57,7 @@
                     android:layout_marginLeft="35dp"
                     android:layout_marginTop="8dp"
                     android:background="#00BCD4"
+                    android:onClick="calcular"
                     android:text="Calcular Promoción"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"

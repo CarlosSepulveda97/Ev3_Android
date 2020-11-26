@@ -17,8 +17,6 @@ import com.google.firebase.database.DatabaseReference;
 import java.util.UUID;
 
 import Model.Cliente;
-import Model.Pedido;
-import Model.Promociones;
 
 public class Firebase_act extends AppCompatActivity {
 
@@ -78,6 +76,10 @@ public class Firebase_act extends AppCompatActivity {
                 }else{
                     Toast.makeText(Firebase_act.this, "Ingrese los campos correctamente", Toast.LENGTH_SHORT).show();
                 }
+
+                ed1.setText("");
+                ed2.setText("");
+                ed3.setText("");
 
             }
         });

@@ -1,22 +1,24 @@
 package Model;
 
-public class Promociones {
+public enum Promociones {
 
-    private String nombrePromocion;
-    private int precio;
+    PROMO("Pizzas promo", 5990),MASTER("Master pizza", 12990),MAX("Pizza max", 18500);
 
-    public Promociones(String s, int i) {
-        this.nombrePromocion = s;
-        this.precio = i;
+    private String nombre;
+    private int costo;
+
+
+    private Promociones(String s, int i) {
+        this.costo=i;
+        this.nombre=s;
     }
 
-
-    public String getNombrePromocion() {
-        return nombrePromocion;
+    public String getNombre() {
+        return nombre;
     }
 
-    public int getPrecio() {
-        return precio;
+    public int getCosto() {
+        return costo;
     }
 
 }
